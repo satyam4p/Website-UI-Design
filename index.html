@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./styles.css">
+</head>
+<body>
+
+    <div class="mobile_navigation" id="mobile_navigation">
+        <div class="mobile_navigation_header">
+            <h4>Design</h4>
+            <div class="close_button" onclick="toggleMobileNavigation()">
+                <button><i class="fa fa-close"></i></button>
+            </div>
+        </div>
+        <a href="" class="mobile_navigation__item mobile_navigation__active">Home</a>
+        <a href="" class="mobile_navigation__item">About</a>
+        <a href="" class="mobile_navigation__item">Service</a>
+        <a href="" class="mobile_navigation__item">Contact</a>
+    </div>
+
+    <div id="container">
+        <header>
+            <h4 class="logo">Design</h4>
+            <nav class="navigation">
+                <a href="" class="navigation__item navigation_item__active">Home</a>
+                <a href="" class="navigation__item">About</a>
+                <a href="" class="navigation__item">Service</a>
+                <a href="" class="navigation__item">Contact</a>
+            </nav>
+            <div class="menu_button" onclick="toggleMobileNavigation()">
+                <button><i class="fa fa-reorder"></i></button>
+            </div>
+            <button class="navigation__button">Get Started</button>
+        </header>
+        <main>
+            <div class="main__content">
+                <h1 class="headline">Create Designs like never before</h1>
+                <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                <button class="play_button">Display video
+                    <i class="fa fa-play-circle"></i>
+                </button>
+            </div>
+            <div class="image">
+                <img style="width:100%" src="./data.jpg" alt="background"></img>
+            </div>
+        </main>
+        <footer>
+            <div class="socials">
+                <a href="" class="social__item"><i class="fa fa-instagram"></i></a>
+                <a href="" class="social__item"><i class="fa fa-twitter"></i></a>
+                <a href="" class="social__item"><i class="fa fa-youtube-play"></i></a>
+            </div>
+            <span>Satyam</span>
+        </footer>
+    </div>
+    <script>
+        function toggleMobileNavigation(){
+            let element = document.getElementById('mobile_navigation');
+            if(element.classList.contains('mobile_navigation_open')){
+                element.classList.remove('mobile_navigation_open');
+            }else{
+                element.classList.add('mobile_navigation_open');
+            }
+            
+            }
+    </script>
+</body>
+</html>
